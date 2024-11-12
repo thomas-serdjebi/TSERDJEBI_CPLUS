@@ -51,9 +51,9 @@ export namespace exo4 {
 
             // Test unitaire : vérification du périmètre formaté à 2 décimales
             if (std::format("{0:.2f}", circle.Perimeter()) == "7.54") {
-                std::cout << "Test passed: Perimeter is correctly calculated as 7.54" << std::endl;
+                std::cout << "Test ok" << std::endl;
             } else {
-                std::cout << "Test failed: Perimeter calculation mismatch" << std::endl;
+                std::cout << "Test ko" << std::endl;
             }
         }
     };
