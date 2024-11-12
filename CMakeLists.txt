@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.29)
 
 # Nom du projet et de l'exécutable généré
-project(template_cpp_cmake)
+project(TSERDJEBI_CPLUS)
 
 # Forcer l'utilisation de C++ 23
 set(CMAKE_CXX_STANDARD 23)
@@ -25,10 +25,18 @@ include(cmake/std.cmake)
 # Liste des fichiers sources des modules des exercices
 set(PROJECT_FILES
         ${SRC_DIR}/exo1.cppm
+        ${SRC_DIR}/exo2.cppm
+        ${SRC_DIR}/exo3.cppm
+        ${SRC_DIR}/exo4.cppm
+
+
 )
 # Liste des fichiers sources des tests unitaires
 set(TEST_FILES
         ${TESTS_DIR}/exo1.cpp
+        ${TESTS_DIR}/exo2.cpp
+        ${TESTS_DIR}/exo3.cpp
+
 )
 # Exécutable principal
 add_executable(${PROJECT_NAME}
