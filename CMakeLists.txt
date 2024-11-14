@@ -28,6 +28,10 @@ set(PROJECT_FILES
         ${SRC_DIR}/exo2.cppm
         ${SRC_DIR}/exo3.cppm
         ${SRC_DIR}/exo4.cppm
+        ${SRC_DIR}/exo5.cppm
+        ${SRC_DIR}/exo6.cppm
+        ${SRC_DIR}/exo7.cppm
+        ${SRC_DIR}/exo8.cppm
 
 
 )
@@ -36,7 +40,12 @@ set(TEST_FILES
         ${TESTS_DIR}/exo1.cpp
         ${TESTS_DIR}/exo2.cpp
         ${TESTS_DIR}/exo3.cpp
-
+        ${TESTS_DIR}/exo4.cpp
+        ${TESTS_DIR}/exo5.cpp
+        ${TESTS_DIR}/exo6.cpp
+        ${TESTS_DIR}/exo7.cpp
+        ${TESTS_DIR}/exo8.cpp
+        tests/exo4.cpp
 )
 # Exécutable principal
 add_executable(${PROJECT_NAME}

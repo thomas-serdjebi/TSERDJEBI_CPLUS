@@ -21,7 +21,7 @@ export namespace exo3 {
 
         // ToString - pour afficher les valeurs du vecteur
         [[nodiscard]] std::string ToString() const {
-            return std::format("({:.2f}, {:.2f}, {:.2f})", a, b, c);
+            return std::format("({:.2f},{:.2f},{:.2f})", a, b, c);
         }
 
         // Opérateur + (addition de deux vecteurs)
@@ -49,15 +49,13 @@ export namespace exo3 {
             const auto vector1 = Vector{1.0, 2.0, 3.0};
             const auto vector2 = Vector{4.0, 5.0, 6.0};
 
-            // Addition de deux vecteurs
             auto vectorSum = vector1 + vector2;
             std::cout << "vector1 + vector2 = " << vectorSum.ToString() << std::endl;
 
-            // Multiplication par un scalaire
             auto vectorScaled = vector1 * 2.0;
             std::cout << "vector1 * 2.0 = " << vectorScaled.ToString() << std::endl;
 
-            // Vérification d'égalité
+
             if (vector1 == vector2) {
                 std::cout << "vector1 est égal à vector2\n";
             } else {

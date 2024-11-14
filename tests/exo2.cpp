@@ -3,9 +3,11 @@
 
 // Importation de l'exercice
 import exo2;
+import std;
 using namespace exo2;
 
-TEST_CASE("Exo1", "[Vector2]") {
+TEST_CASE("Exo2", "[Vector2]") {
+    std::cout << "TESTS EXO 2" << std::endl;
     Vector v1(12.34, 34.56, 56.78);
     REQUIRE(v1.ToString() == "(12.34,34.56,56.78)");
     Vector v2(1.1, 2.2, 3.3);

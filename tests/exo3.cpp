@@ -3,9 +3,11 @@
 
 // Importation de l'exercice
 import exo3;
+import std;
 using namespace exo3;
 
 TEST_CASE("Exo3", "[Vector3]") {
+    std::cout << "TEST EXO 3" << std::endl;
     const auto v1 = Vector{12.34, 56.78, 90.12};
     REQUIRE(v1.ToString() == "(12.34,56.78,90.12)");
     REQUIRE((v1 * 2.0).ToString() == "(24.68,113.56,180.24)");
